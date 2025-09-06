@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+/* stsrt navbar */
+.navbar {
+    padding-top: 48px;
+}
+
+nav .navbar-brand img {
+    width: 125px;
+}
+
+nav .navbar-collapse {
+    background-color: #1A1A1A;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+nav .navbar-collapse ul {
+    display: flex;
+    gap: 44px;
+}
+
+nav .navbar-collapse ul li:last-child {
+    background-color: #000;
+    opacity: 50%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    min-width: 138px;
+    min-height: 47px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+nav .navbar-collapse ul li:last-child:hover {
+    border: none;
+    box-shadow: #000;
+    opacity: 50%;
+    transform: translateY(-3px);
+}
+
+nav .navbar-collapse ul li .nav-link {
+    color: #fff;
+    opacity: 50%;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+}
+
+/* end navbar */
+
+/* start hero section */
+.hero-section {
+    padding-top: 210px;
+    background-image: url("../images/shadow_1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+}
+
+.hero-section>div {
+    max-width: 891px;
+    margin: 0 auto;
+}
+
+.hero-section header h1 {
+    font-family: "Syne", sans-serif;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 93px;
+
+}
+
+.hero-section article button {
+    background-color: #FF9142;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.63px;
+    display: inline-flex;
+    gap: 24px;
+    min-width: 242px;
+    min-height: 65px;
+    border-radius: 33px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+}
+
+.hero-section article button:hover {
+    background-color: #e67a2a;
+    transform: translateY(-3px);
+}
+
+/* end hero section */
+
+/* start about me */
+.about-me {
+    background-image: url("../images/shadow_2.png");
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 30%;
+    padding-top: 100px;
+}
+
+.about-me .about-content .about-info header h3 {
+    font-family: "Syne", sans-serif;
+    color: #fff;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.about-me .about-content .about-info article p {
+    font-family: "Rubik", sans-serif;
+    color: #A8A8A8;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 76px;
+    letter-spacing: 5.5%;
+    line-height: 154.5%;
+}
+
+.about-me .about-content .about-info article button {
+    background-color: #FF9142;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 288px;
+    min-height: 59px;
+    border-radius: 47px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+}
+
+.about-me .about-content .about-info article button a {
+    color: #fff;
+    text-decoration: none
+}
+
+.about-me .about-content .about-info article button:hover {
+    background-color: #e67a2a;
+    transform: translateY(-3px);
+}
+
+.about-me .about-content .about-img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .about-content .about-img img {
+    width: 100%;
+}
+
+/* end about me */
+
+/* start project cards */
+.project-cards {
+    padding-top: 210px;
+    background-image: url("../images/shadow3.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+}
+
+.project-cards .main-content {
+    text-align: center;
+}
+
+.project-cards .main-content header h1 {
+    font-family: "Syne", sans-serif;
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 54px;
+}
+
+.project-cards .main-content article button {
+    background-color: transparent;
+    border: 1px solid #FF9142;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.63px;
+    display: inline-flex;
+    gap: 24px;
+    min-width: 242px;
+    min-height: 65px;
+    border-radius: 33px;
+    margin-bottom: 79px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.project-cards .main-content article button:hover {
+    background-color: #e67a2a;
+    transform: translateY(-3px);
+}
+
+.project-cards .img-content header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-cards .img-content .img-brand {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.project-cards .img-content header h2 {
+    font-family: "Syne", sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: left;
+}
+
+.project-cards .img-content header h2::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 48px;
+    background: url("../images/Line.svg") no-repeat center;
+    margin-left: 32px;
+}
+
+.project-cards .img-content .text-box {
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    margin-top: 32px;
+
+}
+
+.project-cards .img-content .text-box .client,
+.project-cards .img-content .text-box .work {
+
+
+    display: flex;
+    align-items: baseline;
+}
+
+.project-cards .img-content .text-box .client h6,
+.project-cards .img-content .text-box .work h6 {
+    color: #606060;
+    min-width: 80px;
+    margin-right: 40px;
+}
+
+.project-cards .img-content .text-box .client p,
+.project-cards .img-content .text-box .work p {
+    margin-right: 16px;
+}
+
+/* end project cards */
+
+/* start testimonial section */
+.testimonial-section {
+    background-image: url("../images/shadow_2.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-top: 116px;
+    padding: 80px 0;
+}
+
+.testimonial-section .text-box {
+    color: #ffffff;
+    font-family: "Syne", sans-serif;
+    text-align: left;
+}
+
+.testimonial-section .text-box header h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    margin-bottom: 45px;
+}
+
+.testimonial-section .text-box article .paragraph {
+    color: #949494;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.33px;
+    margin-bottom: 30px;
+}
+
+.testimonial-section .text-box article .author {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+.testimonial-section .icon {
+    text-align: center;
+}
+
+/* end testimonial section */
+
+/* start footer */
+footer {
+    background-color: #131313;
+    margin-top: 119px;
+    padding: 80px 0;
+    font-family: "Syne", sans-serif;
+}
+
+
+footer .contact {
+    text-align: center;
+    margin-bottom: 230px;
+}
+
+footer .contact h3 {
+    color: #ff9142;
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+footer .contact a {
+    color: #fff;
+    font-size: 64px;
+    transition: all 0.3s;
+}
+
+footer .contact a:hover {
+    color: #545252;
+}
+
+footer .footer-content .logo img {
+    width: 241px;
+}
+
+footer .footer-content .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-content .links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+footer .footer-content .links ul li a:hover {
+    color: #545252;
+}
+
+footer .copyright {
+    text-align: center;
+    border-top: 1px solid #949494;
+    margin-top: 74px;
+    padding-top: 36px;
+}
+
+footer .copyright p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* end footer */
+
+/* responsive */
+@media (max-width: 576px) {
+
+    /* navbar */
+    nav .navbar-collapse ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav .navbar-collapse ul li:last-child {
+        min-width: 120px;
+        min-height: 40px;
+        font-size: 12px;
+    }
+
+    /* hero */
+    .hero-section {
+        padding-top: 100px;
+        background-size: 80%;
+        background-position: top center;
+        text-align: center;
+    }
+
+    .hero-section header h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .hero-section article button {
+        min-width: 180px;
+        min-height: 45px;
+        font-size: 13px;
+    }
+
+    /* about */
+    .about-me {
+        padding-top: 60px;
+        background-size: 50%;
+    }
+
+    .about-me .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me .about-content .about-info header h3 {
+        font-size: 26px;
+    }
+
+    .about-me .about-content .about-info article p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .about-me .about-content .about-img img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .about-me .about-content .about-info article button {
+        min-width: 200px;
+        min-height: 50px;
+        font-size: 14px;
+    }
+
+    /* projects */
+    .project-cards {
+        padding-top: 100px;
+        background-size: 70%;
+    }
+
+    .project-cards .main-content header h1 {
+        font-size: 32px;
+    }
+
+    .project-cards .main-content article button {
+        min-width: 200px;
+        min-height: 50px;
+        font-size: 13px;
+    }
+
+    .project-cards .img-content header h2 {
+        font-size: 18px;
+    }
+
+    /* testimonial */
+    .testimonial-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .testimonial-section .text-box header h1 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+
+    .testimonial-section .text-box article .paragraph {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .testimonial-section .text-box article .author {
+        font-size: 18px;
+    }
+
+    /* footer */
+    footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    footer .contact h3 {
+        font-size: 18px;
+    }
+
+    footer .contact a {
+        font-size: 28px;
+    }
+
+    footer .footer-content .links ul li a {
+        font-size: 16px;
+    }
+
+    footer .copyright p {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .hero-section {
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .hero-section header h1 {
+        font-size: 48px;
+    }
+
+    .about-me .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me .about-content .about-info header h3 {
+        font-size: 36px;
+    }
+
+    .about-me .about-content .about-info article p {
+        font-size: 16px;
+    }
+
+    .project-cards .main-content header h1 {
+        font-size: 40px;
+    }
+
+    .testimonial-section .text-box header h1 {
+        font-size: 40px;
+    }
+
+    footer .contact a {
+        font-size: 40px;
+    }
+}
+
+
+@media (min-width: 993px) {
+    .hero-section header h1 {
+        font-size: 72px;
+    }
+
+    .about-me .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .project-cards .main-content header h1 {
+        font-size: 64px;
+    }
+
+    .testimonial-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .testimonial-section .text-box header h1 {
+        font-size: 64px;
+    }
+
+    footer .contact a {
+        font-size: 64px;
+    }
+}
